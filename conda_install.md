@@ -29,7 +29,7 @@ After installing, initialise your newly-installed Miniconda. The following comma
 
 ### NOTE 
 >**Close the shell ternmial and relauch a new shell ternmial**
-
+>**Accept or say yes to any prompts from below**
 ```
 #run command to check install
 conda --version
@@ -38,6 +38,7 @@ conda update conda
 ```
 
 ## More setup and install
+>**Accept or say yes to any prompts from below**
 
 1. Create a Conda environment:
    ```
