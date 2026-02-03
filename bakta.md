@@ -1,4 +1,4 @@
-# Gene calling and Annotation
+# LIFE748 Prokaryotic Gene Calling and Annotation Workshop
 
 ## Using gene calling and annotation software 
 
