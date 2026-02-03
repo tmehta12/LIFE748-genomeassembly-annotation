@@ -19,24 +19,6 @@ Pacbio E. coli three genomes at 30x coverage:
 | GN6_hifix30.fastq |        |      |        |
 | GN9_hifix30.fastq |        |      |        |
 
-ONT Salmonella genome at 30X coverage:
-
-| raw reads      | fastqc | flye | quast |
-| ---------------| ------ |------|-------|
-| S_longx30.fastq |        |      |        |
-| S_shortx30.fastq |        |      |        |
-| S_raw_longx30.fastq |        |      |        |
-| S_longx10.fastq |        |      |        |
-| S_longx100.fastq |        |      |        |
-
-Pacbio Salmonella genome at 30X coverage:
-| raw reads      | fastqc | flye | quast |
-| ---------------| ------ |------|-------|
-| S_hifi_longx30.fastq |        |      |        |
-
-
-
-
 
 ### We can use `fastqc` to check the error profiles of the reads
 ```
@@ -408,4 +390,25 @@ Instructions to run QUAST on multiple genome assemblies in a single command.
 
 ### Results
 All results will be saved in the `quast_output` directory, including summary reports, assembly metrics, and additional analyses.
+
+### Additional Work - do this after 'Gene calling and Annotation'!
+
+Additonal reads from other experiments (on Salmonella) are found in the `cgr.liv.ac.uk/454/acdarby/LIFE748/raw/` folder too
+
+Run `fastqc`, `Flye`, and `QUAST` for the following and compare outputs:
+
+ONT Salmonella genome at 30X coverage:
+
+| raw reads      | fastqc | flye | quast |
+| ---------------| ------ |------|-------|
+| S_longx30.fastq |        |      |        |
+| S_shortx30.fastq |        |      |        |
+| S_raw_longx30.fastq |        |      |        |
+| S_longx10.fastq |        |      |        |
+| S_longx100.fastq |        |      |        |
+
+Pacbio Salmonella genome at 30X coverage:
+| raw reads      | fastqc | flye | quast |
+| ---------------| ------ |------|-------|
+| S_hifi_longx30.fastq |        |      |        |
 
