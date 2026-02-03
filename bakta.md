@@ -82,6 +82,7 @@ art GN3_hifix30_flye_assembly.embl + GN3_hifix30_flye_assembly.gbk.txt
 
 ### Benchmarking 
 > You can treat the Prokka directory as a mini “results package”: the .txt, .tsv, .gff, .gbk, .log, and .err files together give you everything they need to evaluate annotation content and performance and then visualise it across genomes
+
 > Below, its assumed that you have multiple genomes (one Prokka folder per genome) and you'll use Bash+R or Python; most examples are in Bash+R though!
 
 ---
