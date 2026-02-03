@@ -1,6 +1,6 @@
 # Download data 
 
-The data pages are on Canvas on the section labled "Data for Workshops"
+The data pages are on LIFE748 Canvas in the section labeled "Data for Workshops"
 
 [DIR] annotation       - bakta and prokka outputs    
 [DIR] assemblies       - flye fasta assemblies in one place    
