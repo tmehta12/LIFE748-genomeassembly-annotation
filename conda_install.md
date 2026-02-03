@@ -90,3 +90,9 @@ quast --version
 
 If all commands return the expected output without errors, it's a good indication that the software tools have been installed correctly in your Conda environment.
 
+## NOTE: You can create a conda environment on your own laptop (Windows, Mac or Linux)
+
+- For this, you will need to find the correct package here: https://www.anaconda.com/download/success
+- Follow the guidance for your operating system here: https://docs.conda.io/projects/conda/en/stable/user-guide/install/index.html
+- For this workshop, I suggest using the WSL method and then for the assessments, you can choose to use WSL, your laptop, or the HPC
+
