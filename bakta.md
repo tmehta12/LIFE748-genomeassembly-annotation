@@ -73,10 +73,10 @@ run prokka
 ```
 conda activate prokka
 prokka -h
-#SEE IF YOU CAN WORK IT OUT
+#SEE IF YOU CAN WORK IT OUT! e.g., prokka [options] <contigs.fasta>
 ```
-you can use the command 
+Then, to view annotations on the same genome assembly you can use the command 
 ```
 art GN3_hifix30_flye_assembly.embl + GN3_hifix30_flye_assembly.gbk.txt
 ```
-to view annotations on the same genome assembly 
+
