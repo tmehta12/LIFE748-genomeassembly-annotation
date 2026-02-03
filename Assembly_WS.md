@@ -369,7 +369,8 @@ Instructions to run QUAST on multiple genome assemblies in a single command.
 
 3. **Optional: Use a Reference Genome**  
    If you have a reference genome, include it to get alignment-based metrics.
-   NOTE: the E. coli K12 reference genome is provided in the downloaded date: `~/cgr.liv.ac.uk/454/acdarby/LIFE748/EcoliK12/EcoliK12_GCA_000005845.2_ASM584v2_genomic.fna`
+
+   NOTE: the E. coli K12 reference genome is provided in the downloaded data: `~/cgr.liv.ac.uk/454/acdarby/LIFE748/EcoliK12/EcoliK12_GCA_000005845.2_ASM584v2_genomic.fna`
    ```bash
    quast.py /path/to/assemblies/* -r reference_genome.fasta -o quast_output
    ```
