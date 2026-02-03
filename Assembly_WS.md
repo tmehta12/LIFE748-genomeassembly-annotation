@@ -393,7 +393,7 @@ Instructions to run QUAST on multiple genome assemblies in a single command.
 
 ---
 
-### Additional Work - do this after 'Gene calling and Annotation'!
+## Additional Work - do this after 'Gene calling and Annotation' !
 
 Additonal reads from other experiments (on Salmonella) are found in the `cgr.liv.ac.uk/454/acdarby/LIFE748/raw/` folder too
 
@@ -426,4 +426,9 @@ Pacbio Salmonella genome at 30X coverage:
 | raw reads      | fastqc | flye | quast |
 | ---------------| ------ |------|-------|
 | S_hifi_longx30.fastq |        |      |        |
+
+### Assess the results 
+- All results will be saved in the `quast_output` directory, including summary reports, assembly metrics, and additional analyses.
+- Have a look at the `report.html` file and compare the assemblies e.g., total assembly size, number of contigs, N50, largest contig length, assembly completeness
+- If these were reference assemblies, which would you pick for downstream analysis? why? 
 
