@@ -97,4 +97,19 @@ If all commands return the expected output without errors, it's a good indicatio
 - For this, you will need to find the correct package here: https://www.anaconda.com/download/success
 - Follow the guidance for your operating system here: https://docs.conda.io/projects/conda/en/stable/user-guide/install/index.html
 - For this workshop, I suggest using the WSL method and then for the assessments, you can choose to use WSL, your laptop, or the HPC
+- NOTE: On M‑series Macs, many Bioconda packages are still only built for osx-64, so you must either (a) force an osx-64 environment that runs under Rosetta emulation - this is found with the quast package where you might get an error like `nothing provides boost >=1.66.0,<1.66.1.0a0 needed by quast-4.6.3-py27pl526h3727419_2`. The most common workaround on M‑series Macs when a Bioconda package is missing osx-arm64 builds, is to create an intel env. Run the following to conda install quast:
 
+1. Create an Intel environment (note CONDA_SUBDIR)
+```
+CONDA_SUBDIR=osx-64 conda create -n quast_env -c conda-forge -c bioconda quast
+```
+
+2. Activate it
+```
+conda activate quast_env
+```
+
+3. Persist the subdir inside that environment
+```
+conda env config vars set CONDA_SUBDIR=osx-64
+```
