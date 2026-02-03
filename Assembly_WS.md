@@ -7,7 +7,7 @@ NOTE
 >- That you have run the command `conda activate genomics_env`
 
 ### Assembly datasets and anaylsis provided:
-[DATA](https://github.com/acdarby/LIFE748/blob/main/data_downloads.md)
+[DATA](https://github.com/tmehta12/LIFE748-genomeassembly-annotation/blob/main/data_downloads.md)
 
 Pacbio E. coli three genomes at 30x coverage:
 
