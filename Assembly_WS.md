@@ -180,7 +180,7 @@ BUGS
     or in www.bioinformatics.babraham.ac.uk/bugzilla/
 ```
 
-We can view the report by navigating to the unix home using filemanager "clinking on the pengiun"
+We can view the report by navigating to the unix home using filemanager "clicking on the penguin"
 
 ![Model](https://github.com/acdarby/LIFE748/blob/main/Artboard1.png)
 
