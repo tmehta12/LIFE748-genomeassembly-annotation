@@ -12,7 +12,7 @@ NOTE
 
 Data for this workshop can be found at [DATA](https://github.com/tmehta12/LIFE748-genomeassembly-annotation/blob/main/data_downloads.md)
 
-ONT Salonella genome at X coverage:
+ONT Salmonella genome at X coverage:
 
 | raw reads      |
 | ---------------|
@@ -22,7 +22,7 @@ ONT Salonella genome at X coverage:
 | S_ONT_longx10.fastq |
 | S_ONT_longx100.fastq |
 
-Pacbio Salonella genome at 30X coverage:
+Pacbio Salmonella genome at 30X coverage:
 | raw reads      |
 | ---------------|
 | S_hifi_longx30.fastq |
