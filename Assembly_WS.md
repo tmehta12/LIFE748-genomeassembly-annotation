@@ -9,6 +9,8 @@ NOTE
 ### Assembly datasets and anaylsis provided:
 [DATA](https://github.com/tmehta12/LIFE748-genomeassembly-annotation/blob/main/data_downloads.md)
 
+These are found in the `LIFE748/raw/` folder
+
 Pacbio E. coli three genomes at 30x coverage:
 
 | raw reads      | fastqc | flye | quast |
