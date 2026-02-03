@@ -387,8 +387,9 @@ Instructions to run QUAST on multiple genome assemblies in a single command.
    ```
 
 ### Results
-All results will be saved in the `quast_output` directory, including summary reports, assembly metrics, and additional analyses.
-
+- All results will be saved in the `quast_output` directory, including summary reports, assembly metrics, and additional analyses.
+- Have a look at the `report.html` file and compare the assemblies e.g., total assembly size, number of contigs, N50, largest contig length, assembly completeness
+- If these were reference assemblies, which would you pick for downstream analysis? why? 
 
 ---
 
