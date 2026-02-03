@@ -369,17 +369,18 @@ Instructions to run QUAST on multiple genome assemblies in a single command.
 
 3. **Optional: Use a Reference Genome**  
    If you have a reference genome, include it to get alignment-based metrics.
+   NOTE: the E. coli K12 reference genome is provided in the downloaded date: `~/cgr.liv.ac.uk/454/acdarby/LIFE748/EcoliK12/EcoliK12_GCA_000005845.2_ASM584v2_genomic.fna`
    ```bash
    quast.py /path/to/assemblies/* -r reference_genome.fasta -o quast_output
    ```
 
-4. **Additional Options**:  
+5. **Additional Options**:  
    QUAST offers various parameters for customization:
    - `--gene-finding` to predict genes
    - `--threads <num>` to specify thread count
    - `--min-contig <size>` to set a minimum contig length (default is 500 bp)
 
-5. **Example Command with Options**:
+6. **Example Command with Options**:
    ```bash
    quast.py /path/to/assemblies/* -r reference_genome.fasta --gene-finding --threads 4 -o quast_output
    ```
