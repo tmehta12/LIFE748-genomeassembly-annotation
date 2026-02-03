@@ -189,7 +189,7 @@ And find the `*.html` file click on this to open the file in a browser.
 note 
 >Refer to the lecture notes make some observations about the quanity, quality and length of the reads in the different files.
 
-### We are using the assemblier called `flye` [Flye github](https://github.com/fenderglass/Flye)
+### We are using the `flye` assembler [Flye github](https://github.com/fenderglass/Flye)
 ```
 flye --help
 ```
