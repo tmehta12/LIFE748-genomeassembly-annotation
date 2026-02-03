@@ -391,6 +391,9 @@ Instructions to run QUAST on multiple genome assemblies in a single command.
 ### Results
 All results will be saved in the `quast_output` directory, including summary reports, assembly metrics, and additional analyses.
 
+
+---
+
 ### Additional Work - do this after 'Gene calling and Annotation'!
 
 Additonal reads from other experiments (on Salmonella) are found in the `cgr.liv.ac.uk/454/acdarby/LIFE748/raw/` folder too
