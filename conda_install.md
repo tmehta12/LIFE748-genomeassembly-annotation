@@ -28,7 +28,8 @@ After installing, initialise your newly-installed Miniconda. The following comma
 ```
 
 ### NOTE 
->**Close the shell ternmial and relauch a new shell ternmial**
+>**Close the shell ternmial and relauch a new shell terminal**
+
 >**Accept or say yes to any prompts from below**
 ```
 #run command to check install
