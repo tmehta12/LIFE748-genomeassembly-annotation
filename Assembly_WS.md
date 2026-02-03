@@ -1,4 +1,4 @@
-# Assembly workshops
+# LIFE748 Prokaryotic Genome Assembly workshop
 
 NOTE
 >This document makes the assumption:
