@@ -268,15 +268,11 @@ You can run Flye polisher as a standalone tool using
 --polish-target option.
 ```
 
-This command for ONT raw (uncorrected) reads:
-```
-flye --nano-raw S_ONT_raw_short.fastq --out-dir S_ONT_raw_short
-```
-
+# NOTE: commands are specific for the origin of the reads, whether raw, corrected or hi-fi for PacBio or raw, correct or high-quality for ONT!
 
 This command for PacBio HiFi:
 ```
-flye --pacbio-hifi GN3_long.fastq --out-dir GN3_long
+flye --pacbio-hifi GN3_hifix30.fastq --out-dir GN3_long
 ```
 provide this output to stdout:
 ```
@@ -400,6 +396,13 @@ Additonal reads from other experiments (on Salmonella) are found in the `cgr.liv
 
 Run `fastqc`, `Flye`, and `QUAST` for the following and compare outputs:
 
+Remember make a note if the reads are `ONT` or `PacBio Hi-Fi` as the Flye command is important:
+
+For example, this would be the command for ONT raw (uncorrected) reads:
+```
+flye --nano-raw S_ONT_shortx30.fastq --out-dir S_ONT_raw_short
+```
+
 ONT Salmonella genome at 30X coverage:
 
 | raw reads      | fastqc | flye | quast |
@@ -409,6 +412,12 @@ ONT Salmonella genome at 30X coverage:
 | S_raw_longx30.fastq |        |      |        |
 | S_longx10.fastq |        |      |        |
 | S_longx100.fastq |        |      |        |
+
+And this would be the command for PacBio reads (like what you ran for the E. coli samples):
+```
+flye --pacbio-hifi S_hifi_longx30.fastq --out-dir S_hifi_long
+```
+
 
 Pacbio Salmonella genome at 30X coverage:
 | raw reads      | fastqc | flye | quast |
