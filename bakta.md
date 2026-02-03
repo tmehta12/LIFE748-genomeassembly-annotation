@@ -29,7 +29,7 @@ Pacbio Salmonella genome at 30X coverage:
 
 the other data follow this pattern
 
-### AIM 
+## AIM 
 > Pick a pair of assemblies from above for comparison
 > e.g. S_ONT_longx30 vs  S_ONT_shortx30 or S_hifi_longx30 vs  S_ONT_longx30 or etc etc 
 > - Use bakta and/or prokka to call genes on two genomes
@@ -80,14 +80,14 @@ Then, to view annotations on the same genome assembly you can use the command
 art GN3_hifix30_flye_assembly.embl + GN3_hifix30_flye_assembly.gbk.txt
 ```
 
-### Benchmarking 
+## Benchmarking 
 > You can treat the Prokka directory as a mini “results package”: the .txt, .tsv, .gff, .gbk, .log, and .err files together give you everything they need to evaluate annotation content and performance and then visualise it across genomes
 
 > Below, its assumed that you have multiple genomes (one Prokka folder per genome) and you'll use Bash+R or Python; most examples are in Bash+R though!
 
 ---
 
-## 1. Which files to use and what they contain
+### 1. Which files to use and what they contain
 
 You should first understand the role of each output file.
 
@@ -107,7 +107,7 @@ For the learning objectives, the “core trio” are `.txt` (summary counts), `.
 
 ---
 
-## 2. Evaluating annotation content and performance
+### 2. Evaluating annotation content and performance
 
 You can construct a small summary table (one row per genome) with:
 
@@ -117,7 +117,7 @@ You can construct a small summary table (one row per genome) with:
 - Functional annotation coverage (fraction of CDS with a non-hypothetical product).
 - Runtime and any warnings.
 
-### 2.1. Gene, CDS, rRNA, tRNA counts
+#### 2.1. Gene, CDS, rRNA, tRNA counts
 
 **Approach A ( using `.txt`):**
 
@@ -129,7 +129,7 @@ The `.txt` file includes lines such as “CDS: 2049”, “tRNA: 57”, etc. (ex
   less PROKKA_02032026.txt
   ```
 
-## Extract key lines
+#### Extract key lines
 
 ```bash
 grep -E 'CDS:|rRNA:|tRNA:' PROKKA_02032026.txt
@@ -175,7 +175,7 @@ Other `ftype` values (e.g. `tmRNA`, `misc_RNA`, `repeat_region`) can optionally 
 
 ---
 
-# 2.2 Functional annotation coverage
+#### 2.2 Functional annotation coverage
 
 Using `PROKKA_*.tsv`, you can quantify what proportion of CDS have a functional annotation (non-hypothetical product).
 
@@ -214,7 +214,7 @@ cds_summary <- cds |>
 
 ---
 
-# 2.3 Runtime efficiency
+#### 2.3 Runtime efficiency
 
 Runtime per genome can be estimated from `.log` timestamps.
 
@@ -248,7 +248,7 @@ This allows you to analyse runtime efficiency across datasets.
 
 ---
 
-# 3. Assembly summary metrics from Prokka outputs
+### 3. Assembly summary metrics from Prokka outputs
 
 If standard assembly reports (e.g. QUAST) are not provided, basic assembly metrics can be computed from `PROKKA_*.fna` or `.fsa`.
 
@@ -282,7 +282,7 @@ To link assembly and annotation:
 
 ---
 
-# 4. Creating comparison figures (R examples)
+### 4. Creating comparison figures (R examples)
 
 Assume you build a `annotation_summary.csv` file with one row per genome:
 
@@ -292,7 +292,7 @@ Assume you build a `annotation_summary.csv` file with one row per genome:
 
 ---
 
-## 4.1 Bar plots of gene and RNA counts
+#### 4.1 Bar plots of gene and RNA counts
 
 **Reshape counts into long format:**
 
@@ -329,7 +329,7 @@ ggplot(gene_long, aes(x = sample, y = count, fill = feature)) +
 
 ---
 
-## 4.2 Functional annotation coverage figure
+#### 4.2 Functional annotation coverage figure
 
 A straightforward figure is a bar plot of `frac_function` per genome:
 
@@ -351,7 +351,7 @@ ggplot(ann, aes(x = sample, y = frac_function)) +
 
 ---
 
-## 4.3 Assembly vs annotation plots
+#### 4.3 Assembly vs annotation plots
 
 **Example 1: Assembly size vs gene count**
 
