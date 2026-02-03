@@ -153,7 +153,7 @@ Because `.tsv` has an `ftype` column, you can count feature types directly.
 cut -f2 PROKKA_02032026.tsv | sort | uniq -c
 ```
 
-**In R:**
+**In R (Rstudio):**
 
 ```r
 library(readr)
@@ -230,7 +230,7 @@ You can calculate elapsed time manually or standardise it by running Prokka with
 
 If logs contain consistent timing lines, you can parse elapsed time into a summary table and derive “genes per minute”.
 
-**Example pseudocode in R:**
+**Example pseudocode in R (Rstudio):**
 
 ```r
 # Pseudocode for parsing last line if it contains 'real X.Y sec'
