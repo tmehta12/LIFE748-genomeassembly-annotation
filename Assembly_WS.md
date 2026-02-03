@@ -268,7 +268,7 @@ You can run Flye polisher as a standalone tool using
 --polish-target option.
 ```
 
-# NOTE: commands are specific for the origin of the reads, whether raw, corrected or hi-fi for PacBio or raw, correct or high-quality for ONT!
+### NOTE: commands are specific for the origin of the reads, whether raw, corrected or hi-fi for PacBio or raw, correct or high-quality for ONT!
 
 This command for PacBio HiFi:
 ```
