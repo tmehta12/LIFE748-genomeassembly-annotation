@@ -13,7 +13,7 @@ mkdir -p ~/miniconda3
 #use wget to download file
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
 
-#use run the downloaded file
+#run the downloaded file - this will install the contents
 bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
 
 #delete the file
