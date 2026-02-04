@@ -7,8 +7,9 @@
 
 NOTE
 >This document makes the assumption:
->- That you are working in a WSL terminal [installing WSL](WSL.md)
->- That you have installed conda and the required software [install conda](conda_install.md)
+>- That you are working in a WSL terminal or HPC environment [installing WSL or loading HPC](WSL.md)
+>- That you have installed conda and the [required software](conda_install.md) if working on WSL **OR** you have loaded the conda environment on the HPC [see Option 2](WSL.md)
+>- If working on the HPC, that you have run the command `conda activate genomics_env`
 
 Data for this workshop can be found at [DATA](https://github.com/tmehta12/LIFE748-genomeassembly-annotation/blob/main/data_downloads.md)
 
@@ -36,7 +37,9 @@ the other data follow this pattern
 > - Use artemis to view and review the genecalls
 
 
-Create environments and install artemis, bakta and prokka
+### ONLY RUN THIS IF YOU ARE WORKING ON WSL - if you are working on the HPC, then just execute `conda activate genomics_env` and start from running the `bakta --db db-light ..` command
+
+NOTE: ONLY needed if you are working on WSL - Create environments and install artemis, bakta and prokka
 
 ``` 
 conda create -n bakta
