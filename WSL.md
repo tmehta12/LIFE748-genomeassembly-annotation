@@ -18,6 +18,7 @@ You will need to do a few steps (~3 mins):
 **NOTE:**
 >If you need to reload on the same computer/session, open powershell and type `wsl` and it'll load Ubuntu back in, then `cd ~` to change to the home directory - you shouldn't need to re-enter your password.
 
+---
 
 ### Option 2 - using the HPC
 You will need to do a few steps (~3 mins) and will need your HPC/cluster account for the session - please ensure to keep your password safe and use your MWS username for login.
@@ -50,6 +51,7 @@ Now, you will source the shared Conda bin dir (by adding to ~/.bashrc if desired
 **NOTE:**
 >If you need to reload on the same computer/session, open powershell and type `wsl` and it'll load Ubuntu back in, then `cd ~` to change to the home directory - you shouldn't need to re-enter your password.
 
+---
 
 ### Option 3 - University Software Application approach (might be deprecated)
 You will need to do a few steps (~5 mins):
