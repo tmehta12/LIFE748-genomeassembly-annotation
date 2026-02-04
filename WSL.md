@@ -1,6 +1,6 @@
 ## Installing Windows Subsystem for Linux (WSL) or HPC usage
 
-There are a few options on systems to use to complete the workshop (option 1 is probably the best!):
+There are a few options on systems to use to complete the workshop (Pick 1 option and stick with it - option 1 might be the best but option 2 might be the quickest!):
 
 ### Option 1 - Ubuntu via wsl.exe and powershell
 You will need to do a few steps (~3 mins):
