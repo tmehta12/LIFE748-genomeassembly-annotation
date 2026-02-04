@@ -14,6 +14,7 @@ You will need to do a few steps (~3 mins):
    
 1. Once installation is complete (~2 mins), it will ask to confirm your username (automatically puts it as your MWS name) and then enter your MWS password (this can't be empty!).
 1. Ubuntu will then load within powershell.
+1. Now, you will need to complete Installing and testing conda
 
 **NOTE:**
 >If you need to reload on the same computer/session, open powershell and type `wsl` and it'll load Ubuntu back in, then `cd ~` to change to the home directory - you shouldn't need to re-enter your password.
