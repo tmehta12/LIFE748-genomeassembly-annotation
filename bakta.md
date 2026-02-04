@@ -9,7 +9,7 @@ NOTE
 >This document makes the assumption:
 >- That you are working in a WSL terminal or HPC environment [installing WSL or loading HPC](WSL.md)
 >- That you have installed conda and the [required software](conda_install.md) if working on WSL **OR** you have loaded the conda environment on the HPC [see Option 2](WSL.md)
->- If working on the HPC, that you have run the command `conda activate genomics_env`
+>- If working on the HPC, that you only need to run the command `conda activate genomics_env` and skip straight to running the specific software commands e.g., `bakta --db db-light ...` in the details below 
 
 Data for this workshop can be found at [DATA](https://github.com/tmehta12/LIFE748-genomeassembly-annotation/blob/main/data_downloads.md)
 
