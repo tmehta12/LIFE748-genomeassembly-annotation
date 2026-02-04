@@ -2,8 +2,8 @@
 
 NOTE
 >This document makes the assumption:
->- That you are working in a WSL terminal [installing WSL](WSL.md)
->- That you have installed conda and the required software [install conda](conda_install.md)
+>- That you are working in a WSL terminal or HPC enviornment [installing WSL or loading HPC](WSL.md)
+>- That you have installed conda and the required software [install conda](conda_install.md) if working on WSL OR you have loaded the conda environment on the HPC [see Option 2](WSL.md)
 >- That you have run the command `conda activate genomics_env`
 
 ### Assembly datasets and anaylsis provided:
