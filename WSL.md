@@ -6,7 +6,7 @@ There are two options (option 1 is probably the best!):
 You will need to do a few steps (~3 mins):
 
 1. Open "Powershell".
-1. Run `wsl.exe --install Ubuntu`. 
+1. Run `wsl.exe --install Ubuntu` 
 1. Once installation is complete (~2 mins), it will ask to confirm your username (automatically puts it as your MWS name) and then enter your MWS password (this can't be empty!).
 1. Ubuntu will then load within powershell.
 
