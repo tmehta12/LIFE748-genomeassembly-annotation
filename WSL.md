@@ -49,7 +49,7 @@ Now, you will source the shared Conda bin dir (by adding to ~/.bashrc if desired
 1. You should now be ready to start the workshop!
 
 **NOTE:**
->If you need to reload on the same computer/session, open powershell and type `wsl` and it'll load Ubuntu back in, then `cd ~` to change to the home directory - you shouldn't need to re-enter your password.
+>If you need to reload your shell session, then just re-run all the same steps!
 
 ---
 
