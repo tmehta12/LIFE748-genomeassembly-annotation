@@ -26,7 +26,7 @@ You will need to do a few steps (~3 mins) and will need your HPC/cluster account
 
 1. Login to the HPC 
     - Load "git bash" or a command line prompt ("powershell" in windows or "terminal" on mac) on your system
-    - ssh <username>@login.pgb.liv.ac.uk
+    - `ssh <username>@login.pgb.liv.ac.uk`
     - Enter your unique password
     - Accept the fingerprint (on first login)
     - Immediately initiate an interactive session on a compute (worker) node by typing and executing: `srun --nodes=1 --ntasks-per-node=1 --time=03:00:00 --pty bash -i`
