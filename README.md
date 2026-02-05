@@ -1,4 +1,4 @@
-# LIFE748
+# LIFE748 Genome Assembly & Annotation
 # Practical sessions 
 
 ## - [Installing Windows Subsystem for Linux or using the HPC (WSL)](WSL.md)
