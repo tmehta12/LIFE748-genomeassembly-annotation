@@ -59,7 +59,16 @@ After installing, initialise your newly-installed Miniconda. The following comma
    ```
    conda activate genomics_env
    ```
-   
+
+3. Add necessary channels and install packages in the environment:
+```
+   conda create --yes \
+  --prefix genomics_env \
+  fastqc flye quast spades -c bioconda -c conda-forge
+```
+
+
+
 3. Add necessary channels:
 ```
    conda config --env --add channels bioconda
