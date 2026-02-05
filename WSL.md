@@ -4,7 +4,7 @@
 - Pick one option and stick with it - For this workshop, I suggest `Option 1` and for any assessments, you could use either Option 1 or 2
 
 ### Option 1 - Ubuntu via wsl.exe and powershell
-You will need to do a few steps (~3 mins):
+You will need to do a few steps (~2 mins):
 
 1. Open "Windows Powershell".
 1. Run `wsl.exe --install Ubuntu`
@@ -16,9 +16,10 @@ You will need to do a few steps (~3 mins):
 **NOTE:**
 >If you need to reload on the same computer/session, open powershell and type `wsl` and it'll load Ubuntu back in, then `cd ~` to change to the home directory - you shouldn't need to re-enter your password.
 >If `wsl` is NOT installed, then follow these steps:
-> 2.1. Open "Install University Applications” in the Windows start menu.
->    2. 1. Search for "wsl" and install "Enable Windows Subsystem For Linux (WSL)" - click 'yes' for all prompts
->       2. 1. Allow the reboot - after reboot, it may still show as installing
+   - Open "Install University Applications” in the Windows start menu
+   - Search for "wsl" and install "Enable Windows Subsystem For Linux (WSL)" - click 'yes' for all prompts
+   - Allow the reboot - after reboot, it may still show as installing but ignore this
+   - Follow from step 1 above (Open "Windows Powershell" ...)
 
 ---
 
