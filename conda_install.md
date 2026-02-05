@@ -1,6 +1,6 @@
 # Install Conda on WSL (~ 5 min)
 
-1. Open WSL terminal
+1. Open WSL terminal with Ubuntu (e.g., "Windows PowerShell" > type `wsl`)
 1.  Download the Miniconda installer:
 Use the `wget` command to download the Miniconda installer for Linux from the official site. For the latest version, you should check the Miniconda page for the correct link. 
 `#` will be used to add notes to the code
