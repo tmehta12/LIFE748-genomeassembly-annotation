@@ -82,26 +82,26 @@ After installing, initialise your newly-installed Miniconda. The following comma
 #conda install -c bioconda porechop
 ```
 
-Now you have a Conda environment named `genomics_env` with all the necessary software installed. Remember to activate this environment every time you work on genomic analysis.
+Now you have a Conda environment named `genomics_env` with all the necessary software installed. Remember to activate this environment every time you work on genomic analysis with `conda activate genomics_env`
 
 
 To test that these software tools are installed correctly, you can perform the following checks:
 
 For each software, run the version command or help command:
- - This display a message confirming the software version if it's correctly installed.
+1. This display a message confirming the software version if it's correctly installed.
    For example:
-```
-fastqc --version
-flye --version
-quast --version
-```
+	```
+	fastqc --version
+	flye --version
+	quast --version
+	```
 
-3. Check Conda's installed package list:
-  	```
+2. Check Conda's installed package list - there will be many packages beyond the three you installed!
+	```
   	conda list
-   ```
+ 	```
 
-If all commands return the expected output without errors, it's a good indication that the software tools have been installed correctly in your Conda environment.
+>If all commands return the expected output without errors, it's a good indication that the software tools have been installed correctly in your Conda environment.
 
 ## NOTE: You can create a conda environment on your own laptop (Windows, Mac or Linux)
 
