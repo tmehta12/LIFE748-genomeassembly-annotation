@@ -6,7 +6,7 @@ There are a few options on systems to use to complete the workshop (Pick one opt
 You will need to do a few steps (~3 mins):
 
 1. Open "Install University Applications” in the Windows start menu.
-1. Search for "wsl" and install "Enable Windows Subsystem For Linux (WSL)". 
+1. Search for "wsl" and install "Enable Windows Subsystem For Linux (WSL)" - click 'yes' for all prompts
 1. Allow the reboot
 
 1. Open "Powershell".
