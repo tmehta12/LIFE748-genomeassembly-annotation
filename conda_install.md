@@ -81,11 +81,11 @@ After installing, initialise your newly-installed Miniconda. The following comma
 	conda install -c bioconda flye
 	conda install -c bioconda quast
 ```
-### NOTE:
->We may use the software below later but do not install in the same conda environment. Remove `#` to use. 
+### NOTE (NO NEED TO RUN YET!)
+>We may use the software below later but do not install in the same conda environment. Remove `#` to use.
+>I will let you know if we need to run these later! 
 ```
 #conda install -c bioconda checkm-genome
-#conda install -c bioconda fastqc flye quast
 #conda install -c bioconda porechop
 ```
 
