@@ -15,7 +15,9 @@ You will need to do a few steps (~2 mins):
 
 **NOTE:**
 >If you need to reload on the same computer/session, open powershell and type `wsl` and it'll load Ubuntu back in, then `cd ~` to change to the home directory - you shouldn't need to re-enter your password.
+>
 >If `wsl` is NOT installed, then follow these steps:
+>
    - Open "Install University Applications” in the Windows start menu
    - Search for "wsl" and install "Enable Windows Subsystem For Linux (WSL)" - click 'yes' for all prompts
    - Allow the reboot - after reboot, it may still show as installing but ignore this
