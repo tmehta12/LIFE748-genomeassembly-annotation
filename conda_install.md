@@ -7,7 +7,6 @@ Use the `wget` command to download the Miniconda installer for Linux from the of
 
 ```
 #make a new dir
-bashs
 mkdir -p ~/miniconda3 
 
 #use wget to download file
