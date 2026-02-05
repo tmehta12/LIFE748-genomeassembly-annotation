@@ -41,9 +41,9 @@ After installing, initialise your newly-installed Miniconda. The following comma
    ```
    
 3. Check for updates
-```
+   ```
    conda update conda
-```
+   ```
 
 
 
