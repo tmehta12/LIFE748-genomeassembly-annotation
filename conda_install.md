@@ -26,10 +26,13 @@ After installing, initialise your newly-installed Miniconda. The following comma
 ~/miniconda3/bin/conda init zsh
 ```
 
-### NOTE 
->**Close the shell ternmial and relauch a new shell terminal**
+### Check and update conda 
 
->**Accept or say yes to any prompts from below**
+#source your `~/.bashrc` file by typing:
+source ~/.bashrc
+
+>**NOTE:Accept (a) or say yes (y) to any prompts from below**
+
 ```
 #run command to check install
 conda --version
