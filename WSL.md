@@ -11,6 +11,7 @@ You will need to do a few steps (~2 mins):
    
 1. Once installation is complete (~2 mins), it will ask to confirm your 'default Unix user account' username (automatically puts it as your MWS name) and then enter either your MWS or any password (however, this can't be empty!).
 1. Ubuntu will then load within the powershell.
+1. Type `cd` to change to your home directory
 1. Now, you will need to continue to [install conda](conda_install.md)
 
 **NOTE:**
