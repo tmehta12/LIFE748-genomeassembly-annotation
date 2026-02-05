@@ -28,8 +28,10 @@ After installing, initialise your newly-installed Miniconda. The following comma
 
 ### Check and update conda 
 
+```
 #source your `~/.bashrc` file by typing:
 source ~/.bashrc
+```
 
 >**NOTE:Accept (a) or say yes (y) to any prompts from below**
 
