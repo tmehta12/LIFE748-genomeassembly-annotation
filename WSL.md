@@ -1,24 +1,24 @@
 ## Installing Windows Subsystem for Linux (WSL) or HPC usage
 
 - There are a few options on systems to use to complete the workshop.
-- Pick one option and stick with it - option 1 might be the best but if there are problems, then use option 2.
+- Pick one option and stick with it - For this workshop, I suggest `Option 1` and for any assessments, you could use either Option 1 or 2
 
 ### Option 1 - Ubuntu via wsl.exe and powershell
 You will need to do a few steps (~3 mins):
 
-1. Open "Install University Applications” in the Windows start menu.
-1. Search for "wsl" and install "Enable Windows Subsystem For Linux (WSL)" - click 'yes' for all prompts
-1. Allow the reboot
-
-1. Open "Powershell".
+1. Open "Windows Powershell".
 1. Run `wsl.exe --install Ubuntu`
    
-1. Once installation is complete (~2 mins), it will ask to confirm your username (automatically puts it as your MWS name) and then enter your MWS password (this can't be empty!).
-1. Ubuntu will then load within powershell.
+1. Once installation is complete (~2 mins), it will ask to confirm your 'default Unix user account' username (automatically puts it as your MWS name) and then enter either your MWS or any password (however, this can't be empty!).
+1. Ubuntu will then load within the powershell.
 1. Now, you will need to continue to [install conda](conda_install.md)
 
 **NOTE:**
 >If you need to reload on the same computer/session, open powershell and type `wsl` and it'll load Ubuntu back in, then `cd ~` to change to the home directory - you shouldn't need to re-enter your password.
+>If `wsl` is NOT installed, then follow these steps:
+> 2.1. Open "Install University Applications” in the Windows start menu.
+>    2. 1. Search for "wsl" and install "Enable Windows Subsystem For Linux (WSL)" - click 'yes' for all prompts
+>       2. 1. Allow the reboot - after reboot, it may still show as installing
 
 ---
 
