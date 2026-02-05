@@ -28,22 +28,27 @@ After installing, initialise your newly-installed Miniconda. The following comma
 
 ### Check and update conda 
 
-```
-#source your `~/.bashrc` file by typing:
-source ~/.bashrc
-```
-
 >**NOTE:Accept (a) or say yes (y) to any prompts from below**
 
+1. Source your `~/.bashrc` file by typing:
+   ```
+   source ~/.bashrc
+	```
+	
+2. Run this command to check conda is installed
+   ```
+   conda activate genomics_env
+   ```
+   
+3. Check for updates
 ```
-#run command to check install
-conda --version
-#check for updates
-conda update conda
+   conda update conda
 ```
 
+
+
 ## More setup and install
->**Accept or say yes to any prompts from below**
+>**NOTE:Accept (a) or say yes (y) to any prompts from below**
 
 1. Create a Conda environment:
    ```
@@ -61,7 +66,7 @@ conda update conda
    conda config --env --add channels conda-forge
 ```
 
-5. Install packages in the environment:
+4. Install packages in the environment:
 ```
 	conda install -c bioconda fastqc
 	conda install -c bioconda flye
