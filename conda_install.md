@@ -61,17 +61,18 @@ After installing, initialise your newly-installed Miniconda. The following comma
    ```
 
 3. Add necessary channels:
-```
+   ```
    conda config --env --add channels bioconda
    conda config --env --add channels conda-forge
-```
+   ```
 
 4. Install packages in the environment:
-```
+   ```
 	conda install -c bioconda fastqc
 	conda install -c bioconda flye
 	conda install -c bioconda quast
-```
+   ```
+   
 ### NOTE
 >We may use the software below later but do not install in the same conda environment. Remove `#` to use.
 
