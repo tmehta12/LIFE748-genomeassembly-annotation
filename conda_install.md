@@ -37,7 +37,7 @@ After installing, initialise your newly-installed Miniconda. The following comma
 	
 2. Run this command to check conda is installed
    ```
-   conda activate genomics_env
+   conda --version
    ```
    
 3. Check for updates
