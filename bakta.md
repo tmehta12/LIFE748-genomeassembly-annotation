@@ -78,7 +78,84 @@ conda activate prokka
 prokka -h
 #SEE IF YOU CAN WORK IT OUT! e.g., prokka [options] <contigs.fasta>
 ```
-Then, to view annotations on the same genome assembly you can use the command 
+
+Fixing Prokka “needs blastp 2.2 or higher” error
+
+If you see an error like:
+```
+[14:39:23] Prokka needs blastp 2.2 or higher. Please install it and ensure it is in your PATH.
+```
+
+This happens because Prokka’s internal version check doesn’t match the BLAST+ version in your conda environment.
+You can fix this by editing the Prokka script inside the conda environment to update the required BLAST+ version.
+
+1. Activate the Prokka environment and locate the script
+
+```
+conda activate prokka   # or your Prokka env name
+which prokka
+```
+
+This will return a path similar to:
+`/path/to/miniconda3/envs/prokka/bin/prokka`
+
+2. Edit the BLAST version requirements
+
+Open the file with a text editor:
+
+Inside that file, find the section for blastp:
+
+```
+nano /path/to/miniconda3/envs/prokka/bin/prokka
+```
+
+```
+    'blastp' => {
+        GETVER => "blastp -version",
+        REGEXP => qr/blastp:\s+($BIDEC)/,
+        MINVER => "2.2",
+        NEEDED => 1,
+    },
+```
+
+Change the MINVER line to:
+```
+        MINVER => "2.12",
+```
+
+Then find the section for makeblastdb:
+```
+    'makeblastdb' => {
+        GETVER => "makeblastdb -version",
+        REGEXP => qr/makeblastdb:\s+($BIDEC)/,
+        MINVER => "2.2",
+        NEEDED => 1,
+    },
+```
+
+And change its MINVER line to:
+
+```
+        MINVER => "2.12",
+```
+
+Save and exit the file:
+`Ctrl + O, Enter, Ctrl + X`
+
+3. Check BLAST and Prokka again
+
+```
+blastp -version
+makeblastdb -version
+prokka --depends
+```
+
+If your installed BLAST+ version is ≥ 2.12, Prokka should now run without the 'needs blastp 2.2 or higher error.'
+
+
+
+
+IGNORE THIS - Then, to view annotations on the same genome assembly you can use the command 
 ```
 art GN3_hifix30_flye_assembly.embl + GN3_hifix30_flye_assembly.gbk.txt
 ```
